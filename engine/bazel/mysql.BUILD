@@ -39,6 +39,8 @@ spu_cmake_external(
     lib_source = ":all_srcs",
     linkopts = [
         "-lpthread",
+	"-static-libstdc++",
+        "-static-libgcc",
     ],
     out_static_libs = [
         "libmysqlclient.a",
