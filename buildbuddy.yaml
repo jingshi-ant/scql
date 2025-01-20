@@ -8,6 +8,5 @@ actions:
         branches:
           - "*"
     steps:
-      - run: |
-      pip install numpy
-      bazel test //engine/... -c opt
+      - run: "pip instll numpy"
+      - run: "bazel test //engine/... -c opt"
